@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Clone</title>
+    <title>Spotify</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="./images/Spotify_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-
     <div class="sidebar">
         <div class="logo">
             <a href="">
-                <img src="./images/Spotify Logo.png" alt="Logo">
+                <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png" alt="Logo">
             </a>
         </div>
 
+        <!-- leftside navigation -->
         <div class="navigation">
             <ul>
                 <li>
@@ -38,59 +39,202 @@
                         <span>Your Library</span>
                     </a>
                 </li>
-            </ul>
-        </div>
 
-        <div class="navigation">
-            <ul>
                 <li>
                     <a href="">
-                        <span class="fa fa-home"></span>
+                        
+                        <span class="fa-solid fa-music"></span>
                         <span>Create Playlist</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <span class="fa fa-search"></span>
+                        <i class="fa-solid fa-heart"></i>
                         <span>Liked Songs</span>
                     </a>
                 </li>
-
             </ul>
         </div>
+        <br>
+         <div style="background-color: rgb(36, 34, 34);width: 330px;height: 150px;border-radius: 20px;text-align: justify;">
+                <h1 style="color: white; font-size: 15px;padding: 20px;">Create your first playlist</h1>
+                <p style="color: white;font-size: 13px;padding: 0px;margin-left: 20px;">it's easy,we'll help you</p>
+                <button style="font-size: 15px;width: 180px;height: 40px;margin-left: 20px;border-radius:20px;margin-top: 20px;"><b>Create playlist</b></button>
+            </div>
 
+            <div style="background-color: rgb(36, 34, 34);width: 330px;height: 160px;border-radius: 20px;text-align: justify;margin-top: 15px;">
+                <h1 style="color: white; font-size: 15px;padding: 20px;margin-left:8px;">Let's find some podcasts to follow</h1>
+                <p style="color: white;font-size: 13px;padding: 10px;margin-left: 15px;">we'll keep you updated on new episodes</p>
+                <button style="font-size: 15px;width: 180px;height: 40px;margin-left:20px;border-radius:20px;margin-top: 10px;"><b>Browse podcast</b></button>
+
+            </div>
         <div class="policies">
             <ul>
                 <li>
                     <a href="">Cookies</a>
                 </li>
+
+               
                 <li>
                     <a href="">Privacy</a>
                 </li>
             </ul>
         </div>
-
+        
+        <div><button style="margin-left: 200px;padding: 10px;margin-top: 10px;background-color: rgb(0, 0, 0);color: white;border-color:white;border-radius: 20px;"> <i class="fa-solid fa-globe"></i>ENGLISH</button></div>
 
     </div>
 
+    <!-- main container -->
+
     <div class="main-container">
         <div class="topbar">
-            <div class="prev-next-buttons">
-                <button type="button" class="fa fas fa-chevron-left"></button>
-                <button type="button" class="fa fas fa-chevron-right"></button>
+           <img  src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Full_Logo_RGB_White.png" alt="" style="width:300px;height: 90px;padding-top: 20px;"> 
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="What do you want to play?">
+                <div class="divider"></div>
+                <i style="color: white;" class="fa-brands fa-edge"></i>
             </div>
+                
+                
+            
+            
+            
 
             <div class="navbar">
                 <ul>
                     <li>
-                        <a href="">Sign Up</a>
+                        <a href="./signup.html">Sign Up</a>
                     </li>
                 </ul>
-                <button type="button">Login</button>
+                <a href="login.html" style="text-decoration: none;">
+                    <button type="button" style="background-color: #ffffff; color: rgb(0, 0, 0); padding: 10px 20px; border: none; border-radius: 20px; cursor: pointer;">
+                        Login
+                    </button>
+                </a>
+                
+            </div>
+        </div>
+
+
+
+
+        <div class="container">
+            <div class="header">
+                <h1>Popular artists</h1>
+                <a href="#"><b>Show all</b></a>
+            </div>
+            <div class="artists">
+                <div class="artist">
+                    <img src="https://i.scdn.co/image/ab6761610000e5ebcb6926f44f620555ba444fca" alt="Portrait of A.R. Rahman">
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                    <div class="name">Pritam </div>
+                    <div class="role">Artist</div>
+                </div>
+                <div class="artist">
+                    <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c" alt="Portrait of A.R. Rahman">
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                    <div class="name">A.R. Rahman</div>
+                    <div class="role">Artist</div>
+                </div>
+                <div class="artist">
+                    <img src="https://i.scdn.co/image/ab676161000051749107d8873f80a26b36f2418e" alt="Portrait of A.R. Rahman">
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                    <div class="name">Sachin-jigar </div>
+                    <div class="role">Artist</div>
+                </div>
+                <div class="artist">
+                    <img src="https://i.scdn.co/image/ab6761610000e5eb5ba2d75eb08a2d672f9b69b7" alt="Portrait of A.R. Rahman">
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                    <div class="name">Arijit singh</div>
+                    <div class="role">Artist</div>
+                </div>
+                <div class="artist">
+                    <img src="https://i.scdn.co/image/ab676161000051740f0be2054fe9594026a6b843" alt="Portrait of A.R. Rahman">
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                    <div class="name">Anirudh ravichander</div>
+                    <div class="role">Artist</div>
+                </div>
+                <div class="artist">
+                    <img src="https://i.scdn.co/image/ab6761610000e5ebc40600e02356cc86f0debe84" alt="Portrait of A.R. Rahman">
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                    <div class="name">Atif aslam</div>
+                    <div class="role">Artist</div>
+                </div>
+                
+                
+                
             </div>
         </div>
 
         <div class="spotify-playlists">
+            <div class="header">
+                <h1></h1>
+                <a href="#"><b>Show all</b></a>
+            </div> 
+            <div class="spotify-playlists">
+                <h2>Popular Albums</h2>
+                <div class="list">
+                    <div class="item">
+                        <img src="./images/newalbam1.jpg" />
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Name By Drakes</h4>
+                        <p>Drake</p>
+                    </div>
+            
+                    <div class="item">
+                        <img src="./images/newalbam2.jpg" />
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Stree-2</h4>
+                        <p>Sachin-Jigar</p>
+                    </div>
+            
+                    <div class="item">
+                        <img src="./images/newalbam3.jpg" />
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Paaraa</h4>
+                        <p>Anirudh Ravichander</p>
+                    </div>
+            
+                    <div class="item">
+                        <img src="./images/newalbam4.jpg" />
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Kantara</h4>
+                        <p>Sai Vignesh</p>
+                    </div>
+            
+                    <div class="item">
+                        <img src="./images/newalbam5.jpg" />
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Vatteppam</h4>
+                        <p>Dabzee
+                        </p>
+                    </div>
+            
+                    <div class="item">
+                        <img src="./images/newalbam6.jpg" />
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Oh Sita Hey Rama</h4>
+                        <p>Vishal Chandrasekhar</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+            
             <h2>Spotify Playlists</h2>
 
             <div class="list">
@@ -150,14 +294,7 @@
 
 
 
-                <div class="item">
-                    <img src="./images/All Out 80s.jpg" />
-                    <div class="play">
-                        <span class="fa fa-play"></span>
-                    </div>
-                    <h4>All out 80s</h4>
-                    <p>The biggest songs of the 1980s. Cover: Michael...</p>
-                </div>
+              
             </div>
         </div>
 
@@ -220,14 +357,7 @@
                     <p>Scores and soundtracks for daring quests, epic...</p>
                 </div>
 
-                <div class="item">
-                    <img src="./images/Workday Lounge.jpg" />
-                    <div class="play">
-                        <span class="fa fa-play"></span>
-                    </div>
-                    <h4>Workday Lounge</h4>
-                    <p>Lounge and chill out music for your workday</p>
-                </div>
+               
             </div>
         </div>
 
@@ -287,24 +417,60 @@
                     <h4>The Sound of Hyde...</h4>
                     <p>The songs that define, unite and distinguish...</p>
                 </div>
-
-
             </div>
-
-            <hr>
         </div>
-
     </div>
-
+  <!-- signup for free -->
     <div class="preview">
         <div class="text">
             <h6>Preview of Spotify</h6>
             <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
         </div>
-        <div class="button">
-            <button type="button">Sign up free</button>
+        <div class="button"><a href="./signup.html">
+            <button type="button">Sign up free</button></a>
         </div>
     </div>
+     <!-- footer -->
+
+    <div class="footer">
+        <div class="footer-column">
+            <h3>Company</h3>
+            <a href="#">About</a>
+            <a href="#">Jobs</a>
+            <a href="#">For the Record</a>
+        </div>
+        <div class="footer-column">
+            <h3>Communities</h3>
+            <a href="#">For Artists</a>
+            <a href="#">Developers</a>
+            <a href="#">Advertising</a>
+            <a href="#">Investors</a>
+            <a href="#">Vendors</a>
+        </div>
+        <div class="footer-column">
+            <h3>Useful links</h3>
+            <a href="#">Support</a>
+            <a href="#">Free Mobile App</a>
+        </div>
+        <div class="footer-column">
+            <h3>Spotify Plans</h3>
+            <a href="#">Premium Individual</a>
+            <a href="#">Premium Duo</a>
+            <a href="#">Premium Family</a>
+            <a href="#">Premium Student</a>
+            <a href="#">Spotify Free</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        
+    </div>
+    <div class="footer-bottom">
+        © 2024 Spotify
+    </div>
+    <br><br><br><br>
 
 
     <script src="https://kit.fontawesome.com/ef9a692198.js" crossorigin="anonymous"></script>
